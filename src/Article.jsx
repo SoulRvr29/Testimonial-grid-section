@@ -10,11 +10,13 @@ const Article = ({ data }) => {
           ? "bg-white  rounded-lg px-10 py-8 text-Very-dark-grayish-blue shadow-xl leading-[1.4] m-4 row-span-2 order-1 max-sm:col-span-1"
           : data.id == 4
           ? "bg-Very-dark-blackish-blue  rounded-lg px-10 py-8 text-white  shadow-xl leading-[1.4] m-4 col-span-2 order-3 max-sm:col-span-1 "
-          : "bg-white  rounded-lg px-10 py-8 text-Very-dark-blackish-blue shadow-xl leading-[1.4] m-4 row-span-2 max-sm:col-span-1 max-sm:order-5 max-lg:order-6 max-lg:col-span-3"
+          : "bg-white  rounded-lg px-10 py-8 text-Very-dark-grayish-blue shadow-xl leading-[1.4] m-4 row-span-2 max-sm:col-span-1 max-sm:order-5 max-lg:order-6 max-lg:col-span-3"
       }
     >
       <svg
-        className={data.id == 1 ? "absolute right-[8%] top-0" : "hidden"}
+        className={
+          data.id == 1 ? "absolute max-sm:right-[8%] right-24 top-0" : "hidden"
+        }
         width="104"
         height="102"
         xmlns="http://www.w3.org/2000/svg"
@@ -37,11 +39,11 @@ const Article = ({ data }) => {
           alt="person photo"
         />
         <div>
-          <h2 className="relative">{data.name}</h2>
+          <h1 className="relative">{data.name}</h1>
           <p className="text-sm opacity-50">Verified Graduate</p>
         </div>
       </div>
-      <h3 className="font-bold text-2xl my-4 z-10 relative">{data.review}</h3>
+      <h2 className="font-bold text-2xl my-4 z-10 relative">{data.review}</h2>
       <p className="opacity-70">{data.quotation}</p>
     </article>
   );
