@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonial-grid-section-royvOlQzZj](https://www.frontendmentor.io/solutions/testimonial-grid-section-royvOlQzZj)
 - Live Site URL: [https://soulrvr29.github.io/Testimonial-grid-section/](https://soulrvr29.github.io/Testimonial-grid-section/)
 
 ### Built with
